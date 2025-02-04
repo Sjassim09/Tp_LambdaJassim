@@ -26,3 +26,19 @@ print("Triple de 4:", triple(4))
 
 #Exercice 3:
 words = ["apple", "banana", "avocado", "cherry", "apricot", "grape"]
+filtered_words = list(filter(lambda word: word.startswith("a"), words))
+print("Mots commençant par 'a':", filtered_words)
+
+def count_long_words():
+    count = 0
+    def counter(word):
+        nonlocal count
+        if len(word) > 5:
+            count += 1
+        return count
+    return counter
+
+word_counter = count_long_words()
+for word in words:
+    word_counter(word)
+print("Nombre de mots > 5 caractères:", word_counter("") )
