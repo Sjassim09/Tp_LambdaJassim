@@ -1,3 +1,4 @@
+#Exercice 1:
 from functools import reduce
 
 square = lambda x: x ** 2
@@ -12,3 +13,15 @@ print(sum_two(3, 4))
 
 total_sum = reduce(sum_two, numbers)
 print("Somme totale:", total_sum)
+
+#Exercice 2:
+def create_multiplier(n):
+    return lambda x: x * n
+
+double = create_multiplier(2)
+triple = create_multiplier(3)
+
+print("Double de 4:", double(4))
+print("Triple de 4:", triple(4))
+
+#Exercice 3:
