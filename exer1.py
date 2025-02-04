@@ -42,3 +42,14 @@ word_counter = count_long_words()
 for word in words:
     word_counter(word)
 print("Nombre de mots > 5 caractères:", word_counter("") )
+
+#Exercice 5:
+
+def compose(f, g):
+    return lambda x: f(g(x))
+
+f1 = lambda x: x + 2
+f2 = lambda x: x * 3
+composed_function = compose(f1, f2)
+print("Composée:", composed_function(4))
+
