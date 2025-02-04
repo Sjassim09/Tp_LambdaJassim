@@ -83,3 +83,11 @@ print("Fibonacci de 10:", fibonacci(10))
 
 
 #Exercice 8:
+def calculateDiscount(products, discount_func):
+    return sum(discount_func(price) for price in products)
+
+products = [100, 200, 300, 400]
+discount_20 = lambda price: price * 0.8
+
+totaldiscount = calculateDiscount(products, discount_20)
+print("Total discount:", totaldiscount)
