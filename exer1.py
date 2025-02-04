@@ -25,3 +25,4 @@ print("Double de 4:", double(4))
 print("Triple de 4:", triple(4))
 
 #Exercice 3:
+words = ["apple", "banana", "avocado", "cherry", "apricot", "grape"]
