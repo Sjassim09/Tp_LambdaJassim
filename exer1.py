@@ -7,3 +7,4 @@ print("Carrés:", squared_numbers)
 
 sum_two = lambda a, b: a + b
 print(sum_two(3, 4))
+
